@@ -1,0 +1,11 @@
+serverId = 'Ua43fe52eaf79dba484bc538958df4435'
+
+LineBot_Token = 'r3Vd2DMVe4ZRSPsC4/zQVzJlfBM6d4oayYSFtwAU5VuRgnfJDrl4HevnSNcW5O6NO1ryrqJJ6cVMvm4j1PNHQ2NBocWCdz9ZEXtUg3cGAAr5+MUZ3kzrfcveN81ZP+pTXRdSyE47DQZS4POJT4eG3QdB04t89/1O/w1cDnyilFU='
+LineBot_Secret = 'dbd13c78d78aefdbc30bce505e652ab1'
+Client_LineBot_Token = 'ASWKfQvAGiXrAOCMcRoc0+vUMYY8hFUFOFFbIgOhBF4v6MIWjr9aHvsdkKrIXdN8MO4vduONxiuFu84dDTcGzGpy6u8umCW0ifDavs3yiPoVdZ94Kk5uKkL25553eygfgdkgCqAcZninEIk5n06J9gdB04t89/1O/w1cDnyilFU='
+
+Firebase_JsonPath = './firebase_resv1.json'
+
+# rich menu id
+# 控制端: 0e6b67a28840b8b78fd936da6a3e2e2a
+Richmenu_Server_Id = 'richmenu-69cecea7e4ae9c4295f15e328586b9a1'
