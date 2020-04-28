@@ -43,6 +43,10 @@ from datetime import datetime
 # import Message template from ./model/message.py(for use reply message)
 from model.message import AllMessage
 
+@app.route("/")
+def hello():
+    return "Hello World!終於成功了。我擦!!!"
+
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
@@ -84,7 +88,7 @@ def handle_postback(event):
             for d in doc.to_dict(): # for each in dict
                 try:# 如果他訂的時間一小時內沒有人的話就第一順位, 有的話就後延      
                     selected_time = datetime.strptime(dict_doc['selected_time'], '%Y-%m-%dT%H:%M')
-                    selected_time_plus = datetime.strptime(dict_doc['selected_time'], '%Y-%m-%dT%H:%M') + timedelta(hours = 1)
+                    selected_time_plus = datetime.strptime(dict_doc['selected_time'], '%Y-%m-%dT%H:%M') + datetime.timedelta(hours = 1)
                     other_selected_time = datetime.strptime(doc.to_dict()[d][1], '%Y-%m-%dT%H:%M')
                     if selected_time <= other_selected_time and selected_time_plus >= other_selected_time: 
                         InOrder += 1
